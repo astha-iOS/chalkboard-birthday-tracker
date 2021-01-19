@@ -15,6 +15,7 @@
 		07083A9825B73D7200C735F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07083A9625B73D7200C735F1 /* LaunchScreen.storyboard */; };
 		07083AA325B73D7200C735F1 /* chalkboard_birthday_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AA225B73D7200C735F1 /* chalkboard_birthday_trackerTests.swift */; };
 		07083AAE25B73D7200C735F1 /* chalkboard_birthday_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AAD25B73D7200C735F1 /* chalkboard_birthday_trackerUITests.swift */; };
+		07083ABF25B73E7E00C735F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 07083ABE25B73E7E00C735F1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		07083AA925B73D7200C735F1 /* chalkboard-birthday-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chalkboard-birthday-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07083AAD25B73D7200C735F1 /* chalkboard_birthday_trackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chalkboard_birthday_trackerUITests.swift; sourceTree = "<group>"; };
 		07083AAF25B73D7200C735F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07083ABE25B73E7E00C735F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		07083A7F25B73D6F00C735F1 = {
 			isa = PBXGroup;
 			children = (
+				07083ABE25B73E7E00C735F1 /* README.md */,
 				07083A8A25B73D6F00C735F1 /* chalkboard-birthday-tracker */,
 				07083AA125B73D7200C735F1 /* chalkboard-birthday-trackerTests */,
 				07083AAC25B73D7200C735F1 /* chalkboard-birthday-trackerUITests */,
@@ -233,6 +236,7 @@
 			files = (
 				07083A9825B73D7200C735F1 /* LaunchScreen.storyboard in Resources */,
 				07083A9525B73D7200C735F1 /* Assets.xcassets in Resources */,
+				07083ABF25B73E7E00C735F1 /* README.md in Resources */,
 				07083A9325B73D6F00C735F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
