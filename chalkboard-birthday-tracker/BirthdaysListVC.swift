@@ -10,12 +10,13 @@ import UIKit
 class BirthdaysListVC: UIViewController {
     
     @IBOutlet weak var table_BirthdayList: UITableView!
-
-
+    let apiObj = RestApi()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        apiObj.getUsersApi()
     }
     
 

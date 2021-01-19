@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		07083A8C25B73D6F00C735F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083A8B25B73D6F00C735F1 /* AppDelegate.swift */; };
 		07083A8E25B73D6F00C735F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083A8D25B73D6F00C735F1 /* SceneDelegate.swift */; };
-		07083A9025B73D6F00C735F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083A8F25B73D6F00C735F1 /* ViewController.swift */; };
 		07083A9325B73D6F00C735F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07083A9125B73D6F00C735F1 /* Main.storyboard */; };
 		07083A9525B73D7200C735F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07083A9425B73D7200C735F1 /* Assets.xcassets */; };
 		07083A9825B73D7200C735F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07083A9625B73D7200C735F1 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		07083AC925B740F100C735F1 /* BirthdaysListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AC825B740F100C735F1 /* BirthdaysListVC.swift */; };
 		07083AD625B7418900C735F1 /* BirthdaysListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AD525B7418900C735F1 /* BirthdaysListTableCell.swift */; };
 		07083AE825B742FD00C735F1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AE725B742FD00C735F1 /* ProfileVC.swift */; };
+		07083AFA25B7462A00C735F1 /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AF925B7462A00C735F1 /* RestApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		07083A8825B73D6F00C735F1 /* chalkboard-birthday-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chalkboard-birthday-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07083A8B25B73D6F00C735F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07083A8D25B73D6F00C735F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07083A8F25B73D6F00C735F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07083A9225B73D6F00C735F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07083A9425B73D7200C735F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07083A9725B73D7200C735F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		07083AC825B740F100C735F1 /* BirthdaysListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysListVC.swift; sourceTree = "<group>"; };
 		07083AD525B7418900C735F1 /* BirthdaysListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysListTableCell.swift; sourceTree = "<group>"; };
 		07083AE725B742FD00C735F1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		07083AF925B7462A00C735F1 /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 				07083AC825B740F100C735F1 /* BirthdaysListVC.swift */,
 				07083AD525B7418900C735F1 /* BirthdaysListTableCell.swift */,
 				07083AE725B742FD00C735F1 /* ProfileVC.swift */,
-				07083A8F25B73D6F00C735F1 /* ViewController.swift */,
+				07083AF925B7462A00C735F1 /* RestApi.swift */,
 				07083A9125B73D6F00C735F1 /* Main.storyboard */,
 				07083A9425B73D7200C735F1 /* Assets.xcassets */,
 				07083A9625B73D7200C735F1 /* LaunchScreen.storyboard */,
@@ -275,8 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07083AFA25B7462A00C735F1 /* RestApi.swift in Sources */,
 				07083AE825B742FD00C735F1 /* ProfileVC.swift in Sources */,
-				07083A9025B73D6F00C735F1 /* ViewController.swift in Sources */,
 				07083A8C25B73D6F00C735F1 /* AppDelegate.swift in Sources */,
 				07083AD625B7418900C735F1 /* BirthdaysListTableCell.swift in Sources */,
 				07083A8E25B73D6F00C735F1 /* SceneDelegate.swift in Sources */,
