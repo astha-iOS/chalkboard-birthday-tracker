@@ -20,6 +20,7 @@
 		07083AD625B7418900C735F1 /* BirthdaysListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AD525B7418900C735F1 /* BirthdaysListTableCell.swift */; };
 		07083AE825B742FD00C735F1 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AE725B742FD00C735F1 /* ProfileVC.swift */; };
 		07083AFA25B7462A00C735F1 /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083AF925B7462A00C735F1 /* RestApi.swift */; };
+		07083B0525B7491B00C735F1 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07083B0425B7491B00C735F1 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		07083AD525B7418900C735F1 /* BirthdaysListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysListTableCell.swift; sourceTree = "<group>"; };
 		07083AE725B742FD00C735F1 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		07083AF925B7462A00C735F1 /* RestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
+		07083B0425B7491B00C735F1 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				07083AD525B7418900C735F1 /* BirthdaysListTableCell.swift */,
 				07083AE725B742FD00C735F1 /* ProfileVC.swift */,
 				07083AF925B7462A00C735F1 /* RestApi.swift */,
+				07083B0425B7491B00C735F1 /* Contact.swift */,
 				07083A9125B73D6F00C735F1 /* Main.storyboard */,
 				07083A9425B73D7200C735F1 /* Assets.xcassets */,
 				07083A9625B73D7200C735F1 /* LaunchScreen.storyboard */,
@@ -281,6 +284,7 @@
 				07083AD625B7418900C735F1 /* BirthdaysListTableCell.swift in Sources */,
 				07083A8E25B73D6F00C735F1 /* SceneDelegate.swift in Sources */,
 				07083AC925B740F100C735F1 /* BirthdaysListVC.swift in Sources */,
+				07083B0525B7491B00C735F1 /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

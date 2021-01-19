@@ -31,9 +31,4 @@ class ProfileVC: UIViewController {
 }
 
 
-extension UIView{
-    func setCornerRadious(radious:CGFloat){
-        self.layer.cornerRadius = radious
-        self.clipsToBounds = true
-    }
-}
+
