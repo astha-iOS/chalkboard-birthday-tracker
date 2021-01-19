@@ -93,6 +93,11 @@ extension BirthdaysListVC:UITableViewDelegate,UITableViewDataSource{
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
             if let navigator = navigationController {
                 navigator.pushViewController(vc, animated: true)
+                
+                let contact = self.contacts[indexPath.row]
+                vc.strName = contact.fullName ?? ""
+                vc.strAge = String(contact.age ?? 0)
+                vc.strTitle = contact.imgTitle ?? ""
             }
         }
     }
