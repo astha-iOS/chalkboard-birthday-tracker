@@ -1,5 +1,5 @@
 //
-//  RestApi.swift
+//  RestClient.swift
 //  chalkboard-birthday-tracker
 //
 //  Created by Astha yadav on 19/01/21.
@@ -14,15 +14,20 @@ protocol ServicesDelegate {
     
 }
 
-let API_URL = "https://randomuser.me/api/?results=10&seed=chalkboard&inc=name,dob"
+//let API_URL = "https://randomuser.me/api/?results=10&seed=chalkboard&inc=name,dob"
 
-class RestApi: NSObject {
+
+class RestClient: NSObject {
     
      var delegate: ServicesDelegate?
     
     
     //MARK:- getFriendsInfoApi
-    func getUsersApi(){
+    func getUsers(recordCount:Int){
+        
+        let API_URL = String(format: "https://randomuser.me/api/?results=%@&seed=chalkboard&inc=name,dob",String(recordCount))
+        
+        print(API_URL)
         
         let request : NSMutableURLRequest = NSMutableURLRequest()
         request.url = NSURL(string: API_URL) as URL?

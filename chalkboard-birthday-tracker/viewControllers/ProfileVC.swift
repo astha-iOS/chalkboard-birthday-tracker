@@ -30,14 +30,11 @@ class ProfileVC: UIViewController {
         lbl_yearOld.text = strAge + " YEARS OLD"
         
     }
-    
 
     @IBAction func goBackClick(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-
-    
-    
+  
 }
 
 

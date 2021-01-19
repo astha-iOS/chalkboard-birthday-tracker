@@ -10,16 +10,15 @@ import UIKit
 class BirthdaysListVC: UIViewController, ServicesDelegate{
     
     @IBOutlet weak var table_BirthdayList: UITableView!
-    let apiObj = RestApi()
+    let restClient = RestClient()
     var contacts : [Contact] = []
     var sortedContacts : [Contact] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        apiObj.delegate = self
-        apiObj.getUsersApi()
+        restClient.delegate = self
+        restClient.getUsers(recordCount:20)
     }
     
 
@@ -40,7 +39,8 @@ class BirthdaysListVC: UIViewController, ServicesDelegate{
                         }
                     }
                 }
-               
+                
+                self.sortedContacts = self.contacts.sorted(by: { $0.daysRemainingInNextBDay ?? 0 < $1.daysRemainingInNextBDay ?? 0})
                 
                 DispatchQueue.main.async {
                     self.table_BirthdayList.reloadData()
@@ -59,16 +59,17 @@ class BirthdaysListVC: UIViewController, ServicesDelegate{
 //MARK:- UITableView Delegate Datasource
 extension BirthdaysListVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        return self.sortedContacts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BirthdaysListTableCell", for: indexPath) as! BirthdaysListTableCell
         
-        cell.lbl_profile.setCornerRadious(radious: cell.lbl_profile.frame.size.height/2)
-
-        let contact = self.contacts[indexPath.row]
+        cell.lbl_profile.layer.cornerRadius = cell.lbl_profile.frame.size.height/2
+        cell.lbl_profile.clipsToBounds = true
+        
+        let contact = self.sortedContacts[indexPath.row]
         
         cell.lbl_name.text = contact.fullName
         
@@ -76,7 +77,6 @@ extension BirthdaysListVC:UITableViewDelegate,UITableViewDataSource{
         let strDob = dob.components(separatedBy: "T")[0]
         cell.lbl_birthday.text = formateDate(strDob)
         cell.lbl_profile.text = contact.imgTitle
-    
 
         return cell
     }
@@ -94,7 +94,7 @@ extension BirthdaysListVC:UITableViewDelegate,UITableViewDataSource{
             if let navigator = navigationController {
                 navigator.pushViewController(vc, animated: true)
                 
-                let contact = self.contacts[indexPath.row]
+                let contact = self.sortedContacts[indexPath.row]
                 vc.strName = contact.fullName ?? ""
                 vc.strAge = String(contact.age ?? 0)
                 vc.strTitle = contact.imgTitle ?? ""
@@ -102,6 +102,16 @@ extension BirthdaysListVC:UITableViewDelegate,UITableViewDataSource{
         }
     }
         
+}
+
+extension Date {
+    func get(_ components: Calendar.Component..., calendar: Calendar = Calendar.current) -> DateComponents {
+        return calendar.dateComponents(Set(components), from: self)
+    }
+
+    func get(_ component: Calendar.Component, calendar: Calendar = Calendar.current) -> Int {
+        return calendar.component(component, from: self)
+    }
 }
 
 extension UIView{
