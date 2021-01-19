@@ -1,4 +1,7 @@
 ### chalkboard Birthday Tracker
+#### Contact Info
+* Email : yadavastha100891@gmail.com
+
 #### How to install and run the project
 * Clone project https://github.com/astha-iOS/chalkboard-birthday-tracker.git
 * Navigate into the directory
